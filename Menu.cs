@@ -15,7 +15,7 @@ namespace CinemaProject
             while (true)
             {
                 Console.WriteLine("What are you want to do?");
-                Console.WriteLine("Sessions editing(se), Halls editing(he), Book a seat(book), Tickets Purchasing(purch), Ticket Return(tr), Exit(exit)");
+                Console.WriteLine("Sessions editing(se), Halls editing(he), Book a seat(book), Tickets Purchasing(purch), Ticket Return(tr), Financial report(fr), Exit(exit)");
                 Console.WriteLine("Enter: ");
                 string input = Console.ReadLine();
 
@@ -44,6 +44,11 @@ namespace CinemaProject
                     case "tr":
                         var returner = new TicketReturn();
                         returner.Start(cinema);
+                        Console.WriteLine("Main menu:");
+                        break;
+                    case "fr":
+                        var financialReport = new FinancialReport();
+                        financialReport.Show(cinema);
                         Console.WriteLine("Main menu:");
                         break;
                     case "exit":
