@@ -130,3 +130,4 @@ D:\SoftServe\CinemaProject\obj\Debug\net8.0\refint\CinemaProject.dll
 D:\SoftServe\CinemaProject\obj\Debug\net8.0\CinemaProject.pdb
 D:\SoftServe\CinemaProject\obj\Debug\net8.0\CinemaProject.genruntimeconfig.cache
 D:\SoftServe\CinemaProject\obj\Debug\net8.0\ref\CinemaProject.dll
+D:\SoftServe\CinemaProject\obj\Debug\net8.0\CinemaProject.sourcelink.json

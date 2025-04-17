@@ -20,7 +20,7 @@ namespace CinemaProject
 
         public override string ToString()
         {
-            return $"[{ID}] - {Film?.Name}, Hall№ {Hall?.CinemaHallID}, {DateTime}, {TicketPrice}grn, {SessionStatus?.SessionStatusName}";
+            return $"[{ID}] - {Film?.Name}, Hall№ {Hall?.CinemaHallID}, {DateTime}, {TicketPrice} UAH, {SessionStatus?.SessionStatusName}";
         }
     }
 }

@@ -56,7 +56,7 @@ namespace CinemaProject
             var totalTickets = context.Tickets
                 .Include(t => t.Status)
                 .Count(t => t.Status.TicketStatusName == "Bought");
-            Console.WriteLine($"\n🎟  Total tickets sold: {totalTickets}");
+            Console.WriteLine($"\n  Total tickets sold: {totalTickets}");
         }
 
         public void IncomeByFilm(AppDbContext context)
@@ -76,7 +76,7 @@ namespace CinemaProject
 
             foreach (var film in incomeByFilm)
             {
-                Console.WriteLine($"{film.FilmName}: {film.TotalIncome} grn");
+                Console.WriteLine($"{film.FilmName}: {film.TotalIncome} UAH");
             }
         }
 
@@ -99,7 +99,7 @@ namespace CinemaProject
 
             foreach (var session in incomeBySession)
             {
-                Console.WriteLine($"Session {session.SessionID} ({session.FilmName} at {session.DateTime}): {session.TotalIncome} grn");
+                Console.WriteLine($"Session {session.SessionID} ({session.FilmName} at {session.DateTime}): {session.TotalIncome} UAH");
             }
         }
     }
